@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/d32ef6fe58.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="left-box">
+          <h1>Stay updated!</h1>
+          <p>
+            Join 60,000+ product managers receiving monthly <br />updates on:
+          </p>
+
+          <div class="check-con">
+            <div class="list">
+              <span><i class="fa-solid fa-check"></i></span>
+              <p>Product discovery and building what matters</p>
+            </div>
+            <div class="list">
+              <span><i class="fa-solid fa-check"></i></span>
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="list">
+              <span><i class="fa-solid fa-check"></i></span>
+              <p>And much more!</p>
+            </div>
+          </div>
+
+          <div class="main-con">
+            <div class="msg">
+              <p>Email address</p>
+              <p id="msg2"></p>
+            </div>
+
+            <input
+              type="text"
+              placeholder="email@company.com"
+              id="input"
+              value=""
+            />
+            <button id="btn">Subscribe to monthly newsletter</button>
+          </div>
+        </div>
+        <div class="right-box">
+          <img
+            src="assets/images/illustration-sign-up-desktop.svg"
+            alt="illustration-sign-up-desktop"
+          />
+        </div>
+      </div>
+
+      <div class="modal">
+        <div class="popup">
+          <span><i class="fa-solid fa-check"></i></span>
+          <h1>Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to
+            <span id="value"></span> Please open it and click the button inside
+            to confirm your subscription.
+          </p>
+          <button class="btn2">Dismiss message</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
